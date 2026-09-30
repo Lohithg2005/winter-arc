@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="theme-color" content="#080b12">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <title>Winter Arc 3.0</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="brand">
+        <div class="logo">❄️ WINTER ARC</div>
+        <div class="version">3.0 • 90 DAY JOURNEY</div>
+    </div>
+
+    <div class="top-actions">
+        <div class="date" id="todayDate"></div>
+        <button id="installBtn" class="install-btn">📱 Install</button>
+    </div>
+
+</header>
+
+<main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-main">
+            <p class="small-title">YOUR JOURNEY</p>
+
+            <h1 id="dayNumber">DAY 1 / 90</h1>
+
+            <p id="journeyText">
+                Tomorrow starts the journey.
+            </p>
+        </div>
+
+        <div class="level-box">
+            <span>LEVEL</span>
+            <strong id="level">1</strong>
+            <small><span id="xp">0</span> XP</small>
+        </div>
+
+    </section>
+
+
+    <!-- QUICK NAV -->
+    <nav class="quick-nav">
+
+        <a href="#morningSection">🌅</a>
+        <a href="#studySection">📚</a>
+        <a href="#skillsSection">💻</a>
+        <a href="#fitnessSection">🏃</a>
+        <a href="#healthSection">💧</a>
+
+    </nav>
+
+
+    <!-- PROGRESS -->
+    <section class="card">
+
+        <div class="section-heading">
+            <h2>🔥 Today's Progress</h2>
+            <strong id="progressText">0%</strong>
+        </div>
+
+        <div class="progress-track">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+
+            <div>
+                <span>🔥</span>
+                <strong id="streak">0</strong>
+                <small>Streak</small>
+            </div>
+
+            <div>
+                <span>✅</span>
+                <strong id="completedCount">0</strong>
+                <small>Completed</small>
+            </div>
+
+            <div>
+                <span>🎯</span>
+                <strong id="totalCount">0</strong>
+                <small>Total</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MORNING -->
+    <section class="card" id="morningSection">
+
+        <div class="category-title">
+            <span>🌅</span>
+
+            <div>
+                <h2>Morning</h2>
+                <p>Start the day strong</p>
+            </div>
+        </div>
+
+        <div id="morningTasks" class="task-list"></div>
+
+    </section>
+
+
+    <!-- STUDY -->
+    <section class="card" id="studySection">
+
+        <div class="category-title">
+            <span>📚</span>
+
+            <div>
+                <h2>Study & Learning</h2>
+                <p>Build your knowledge</p>
+            </div>
+        </div>
+
+        <div id="studyTasks" class="task-list"></div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="card" id="skillsSection">
+
+        <div class="category-title">
+            <span>💻</span>
+
+            <div>
+                <h2>Skills</h2>
+                <p>Become better every day</p>
+            </div>
+        </div>
+
+        <div id="skillTasks" class="task-list"></div>
+
+    </section>
+
+
+    <!-- FITNESS -->
+    <section class="card" id="fitnessSection">
+
+        <div class="category-title">
+            <span>🏃</span>
+
+            <div>
+                <h2>Fitness</h2>
+                <p>Move your body</p>
+            </div>
+        </div>
+
+        <div id="fitnessTasks" class="task-list"></div>
+
+    </section>
+
+
+    <!-- HEALTH -->
+    <section class="card" id="healthSection">
+
+        <div class="category-title">
+            <span>💧</span>
+
+            <div>
+                <h2>Health</h2>
+                <p>Take care of yourself</p>
+            </div>
+        </div>
+
+        <div id="healthTasks" class="task-list"></div>
+
+    </section>
+
+
+    <!-- SUNDAY -->
+    <section class="card sunday-card">
+
+        <div class="category-title">
+            <span>🌴</span>
+
+            <div>
+                <h2>Sunday Routine</h2>
+                <p>Weekly reset</p>
+            </div>
+        </div>
+
+        <div id="sundayTasks" class="task-list"></div>
+
+    </section>
+
+
+    <!-- QUOTE -->
+    <section class="quote">
+
+        <div>❄️</div>
+
+        <p>
+            "Small progress every day becomes a completely different person."
+        </p>
+
+    </section>
+
+</main>
+
+
+<!-- Bottom mobile bar -->
+<div class="mobile-bar">
+
+    <a href="#">🏠<span>Home</span></a>
+    <a href="#morningSection">🌅<span>Morning</span></a>
+    <a href="#studySection">📚<span>Study</span></a>
+    <a href="#fitnessSection">🏃<span>Fitness</span></a>
+    <a href="#healthSection">💧<span>Health</span></a>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
